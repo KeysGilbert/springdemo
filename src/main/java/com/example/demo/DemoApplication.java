@@ -14,17 +14,11 @@ import java.util.List;
 
 
 @SpringBootApplication
-@RestController
 public class DemoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-	@GetMapping
-	public List<Student> students() {
-		return List.of(
-				new Student(1L, LocalDate.of(1980, Month.JANUARY, 1), 30,"john@johndoe.com", "John Doe")
-		);
-	}
+
 }
